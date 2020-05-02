@@ -1,4 +1,9 @@
-package array.MergeSortedArrays;
+package array.MergeSortedArrays_88;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /*
     #88
@@ -21,4 +26,9 @@ package array.MergeSortedArrays;
 
  */
 public class Main {
+    public static void main(String[] args) {
+        String J = "";
+        char[] chars = J.toCharArray();
+        Set<Character> jewels = new HashSet<>();
+    }
 }
