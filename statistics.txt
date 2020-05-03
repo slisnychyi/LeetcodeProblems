@@ -5,5 +5,5 @@ https://github.com/Semaserg/LeetCodeProblems
 May
 
 01.05 - 118, 88
-02.05 - 66, bi_weekly contest(1431, 1432)
-
+02.05 - 66, bi_weekly_contest(1431, 1432)
+03.05 - 26, 27, may(383), weekly_contest(1437, 1436)
