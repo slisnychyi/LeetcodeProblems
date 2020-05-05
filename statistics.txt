@@ -8,3 +8,37 @@ May
 02.05 - 66, 1431, 1432
 03.05 - 26, 27, 383, 1437, 1436
 04.05 - 1009
+05.05 - 387, 209
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Done with help:
+
+16
+
+
+
+
+
+
+
+
+
+links:
+list of easy problems https://leetcode.com/list/xioeqqdc/
+and explanation to them https://www.notion.so/b9eecef2562549a6a6803fbdcf80c58a?v=9596b8d3cabd4c97aac76073440bbcf5

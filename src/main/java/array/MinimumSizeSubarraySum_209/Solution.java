@@ -12,12 +12,38 @@ package array.MinimumSizeSubarraySum_209;
     If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
  */
 
-import java.util.Arrays;
-
 public class Solution {
 
+    public int minSubArrayLen2(int s, int[] nums) {
+        int length = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            int sum = 0;
+            int len = 0;
+            for (int j = i; j < nums.length; j++) {
+                sum += nums[j];
+                len++;
+                if (sum >= s && length > len) {
+                    length = len;
+                    break;
+                }
+            }
+        }
+        return length == Integer.MAX_VALUE ? 0 : length;
+    }
+
+    //decision with 0(log(n))
     public int minSubArrayLen(int s, int[] nums) {
-        return 0;
+        if (nums.length == 0) return 0;
+        int length = Integer.MAX_VALUE;
+        int[] sums = new int[nums.length + 1];
+        for (int i = 1; i <= nums.length; i++) {
+            sums[i] = sums[i - 1] + nums[i - 1];
+        }
+        for (int i = 1; i <= nums.length; i++) {
+            int find = s + sums[i - 1];
+
+        }
+        return length == Integer.MAX_VALUE ? 0 : length;
     }
 
 }
