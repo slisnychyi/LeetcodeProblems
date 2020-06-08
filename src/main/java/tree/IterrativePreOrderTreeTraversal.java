@@ -20,6 +20,32 @@ public class IterrativePreOrderTreeTraversal {
 
     }
 
+    public String removeOuterParentheses(String s) {
+        String result = "";
+        int pointer = 1;
+        Stack<Character> stack = new Stack<>();
+        char[] arr = s.toCharArray();
+        stack.push(arr[0]);
+        while(pointer < arr.length){
+            if(arr[pointer] == ')'){
+                stack.pop();
+                if(stack.isEmpty()){
+                    if(pointer == arr.length - 1) break;
+                    stack.push(arr[pointer + 1]);
+                    pointer += 2;
+                } else {
+                    result += ")";
+                    pointer++;
+                }
+            } else {
+                stack.push(arr[pointer]);
+                result += "(";
+                pointer++;
+            }
+        }
+        return result;
+    }
+
     public List<Integer> preorder(Node root) {
         List<Integer> result = new ArrayList<>();
         Stack<Node> stack = new Stack<>();
