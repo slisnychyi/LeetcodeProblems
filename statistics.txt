@@ -3,7 +3,7 @@ Solved:
 https://github.com/Semaserg/LeetCodeProblems
 
 ### July
-20.07 - 384(Shuffle an array), 771, bfs impl, 88, 118, 66
+20.07 - 384(Shuffle an array), 771, bfs impl, 88, 118, 66б 26
 
 
 
