@@ -7,18 +7,18 @@ import static org.assertj.core.api.Assertions.*;
 
 public class SolutionTest {
     @Test
-    public void test1(){
+    public void test1() {
         //given
         Solution solution = new Solution();
         //when
         int[] nums1 = {1, 2, 3, 0, 0, 0};
-        solution.merge(nums1, 3, new int[]{4,5,6}, 3);
+        solution.merge(nums1, 3, new int[]{4, 5, 6}, 3);
         //then
-        assertThat(nums1).containsExactly(1,2,3,4,5,6);
+        assertThat(nums1).containsExactly(1, 2, 3, 4, 5, 6);
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         //given
         Solution solution = new Solution();
         //when
@@ -26,11 +26,11 @@ public class SolutionTest {
         int[] nums2 = {1, 2, 3};
         solution.merge(nums1, 3, nums2, 3);
         //then
-        assertThat(nums1).containsExactly(1,2,3,4,5,6);
+        assertThat(nums1).containsExactly(1, 2, 3, 4, 5, 6);
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         //given
         Solution solution = new Solution();
         //when
@@ -40,4 +40,17 @@ public class SolutionTest {
         //then
         assertThat(nums1).containsExactly(1);
     }
+
+    @Test
+    public void test4() {
+        //given
+        Solution solution = new Solution();
+        //when
+        int[] nums1 = {1};
+        int[] nums2 = {0};
+        solution.merge(nums1, 1, nums2, 0);
+        //then
+        assertThat(nums1).containsExactly(1);
+    }
+
 }
